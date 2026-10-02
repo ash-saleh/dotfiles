@@ -1,0 +1,59 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    //"modules-center": ["sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "pulseaudio", "battery"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-bluetooth": "{volume}% {icon}",
+	"format-muted": "",
+	"format-icons": {
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+		"headphone": "",
+		"hands-free": "󰂑",
+		"headset": "󰂑",
+		"phone": "",
+		"phone-muted": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+	},
+	"network": {
+	"interface": "wlp0s20f3",
+	"format": "{ifname}",
+	"format-wifi": "({signalStrength}%) ",
+	"format-ethernet": "{ifname} ",
+	"format-disconnected": "", //An empty format will hide the module.
+	"format-disconnected": "",
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected",
+	"max-length": 50
+	},
+	"sway/workspaces": {
+	"persistent-workspaces": {
+		"1": ["eDP-1"],
+		"2": ["eDP-1"],
+		"3": ["eDP-1"],
+		"4": ["eDP-1"],
+		"5": ["eDP-1"]
+		
+	}
+}
+}

@@ -1,0 +1,62 @@
+* {
+    border: none;
+    font-family: "SF Pro Display", "JetBrainsMono Nerd Font Propo"; 
+    font-size: 13px;
+    
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+
+}
+window#waybar,
+window#waybar.empty,
+window#waybar.solo,
+window#waybar.hidden {
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.0);
+    color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces {
+    transition: all 550ms linear;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 4px 3px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    background: white;
+    min-width: 50px;
+    color: #ffffff;
+}
+
+#mode, #clock, #battery, #network {
+    padding: 0 12px;
+    margin: 4px 3px;
+}
+
+
+#clock {
+    background-color: transparent;
+}
+
+#battery {
+    background-color: transparent;
+    color: white;
+}
+
