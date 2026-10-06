@@ -39,3 +39,7 @@ opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }  -- make stray white
 vim.schedule(function()
   opt.clipboard = "unnamedplus"
 end)
+
+opt.showmode = false -- the statusline shows the mode now
+
+opt.laststatus = 3  -- one global statusline; kanagawa reads this at setup

@@ -8,7 +8,13 @@
         "max-length": 50
     },
     "battery": {
+        "interval": 2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
         "format": "{capacity}% {icon}",
+        "format-charging": " {capacity}% {}",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
