@@ -1,0 +1,13 @@
+[manager]
+show_hidden = true
+
+[opener]
+zathura = [
+    { run = 'zathura "%s"', orphan = true, desc = "Zathura", for = "unix" }
+]
+
+[open]
+rules = [
+    { mime = "application/pdf", use = [ "zathura", "reveal" ] }
+]
+
