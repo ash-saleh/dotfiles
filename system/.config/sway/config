@@ -276,3 +276,5 @@ exec mako
 bindsym $mod+Shift+space exec makoctl dismiss
 
 include /etc/sway/config.d/*
+
+exec lxqt-policykit-agent

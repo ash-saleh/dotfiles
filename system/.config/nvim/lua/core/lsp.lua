@@ -11,7 +11,10 @@ vim.lsp.config("basedpyright", {
 })
 
 vim.lsp.config("tinymist", {
-  settings = { formatterMode = "typstyle" },  -- used for formatting in step 6
+  settings = {
+    formatterMode = "typstyle",
+    exportPdf = "onSave",
+  },  -- used for formatting in step 6
 })
 
 -- Diagnostics: since 0.11, messages aren't shown inline unless you ask
