@@ -5,7 +5,7 @@ return {
   build = ":TSUpdate",  -- rebuild parsers whenever the plugin updates
   config = function()
     require("nvim-treesitter").install({
-      "python", "typst", "lua",
+      "haskell", "python", "typst", "lua",
       "toml", "bash", "json", "yaml",
       "markdown", "markdown_inline",
     })

@@ -22,6 +22,7 @@ return {
     formatters_by_ft = {
       python = { "ruff_organize_imports", "ruff_format" },  -- run in order: sort imports, then format
       typst = { lsp_format = "prefer" },                     -- hand Typst to tinymist (typstyle)
+      haskell = { lsp_format = "prefer"},
     },
     format_on_save = function(bufnr)
       -- Skip when toggled off, or for filetypes with no formatter chosen above
